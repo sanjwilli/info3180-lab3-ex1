@@ -1,16 +1,16 @@
 import smtplib
 
-from_addr = 'williamsanjay123@gmail.com'
+from_addr = ''
 
-to_addr = 'williamsanjay12@gmail.com'
+to_addr = ''
 
-from_name = "Sanjay"
+from_name = ""
 
-to_name = "Sanjay"
+to_name = ""
 
-subject = "Testing"
+subject = ""
 
-msg = "Testing this thing again"
+msg = ""
 
 message = """From: {0} <{1}>
 
@@ -26,9 +26,9 @@ message_to_send = message.format(from_name, from_addr, to_name, to_addr, subject
 
 # Credentails (if needed)
 
-username = 'williamsanjay123@gmail.com'
+username = ''
 
-password = 'dljlcgflwzsrofzd'
+password = ''
 
 # The actual mail send
 
@@ -43,5 +43,3 @@ server.login(username, password)
 server.sendmail(from_addr, to_addr, message_to_send)
 
 server.quit()
-
-# dljlcgflwzsrofzd 
